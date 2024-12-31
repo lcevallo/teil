@@ -73,3 +73,16 @@ php artisan migrate:fresh --seed
 php artisan make:filament-resource Property --generate --view --soft-deletes
 php artisan blueprint:build
 php artisan blueprint:erase
+
+https://stackoverflow.com/questions/46877667/how-to-add-a-new-project-to-github-using-vs-code
+
+To set up the schoolMIS application, follow these steps:
+
+    Clone the repository: git clone https://github.com/qaisnezami/schoolmis.git
+    Configure environment variables: Run cd schoolmis && cp .env.example .env ,
+    Install composer: composer install
+    Generate application key: php artisan key:generate
+    Run migrations: php artisan migrate (This command sets up the database tables based on defined migrations)
+    (Optional) Seed the database: php artisan db:seed (This command populates the database with sample data, if available)
+    Run Application php artisan serve,
+    Link Storage php artisan storage:link
