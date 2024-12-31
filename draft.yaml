@@ -1,0 +1,17 @@
+models:
+  Property:
+    title: string
+    description: longtext
+    country: string
+    city: string
+    address: longtext
+    price: decimal:8,2
+    sqm: unsignedInteger
+    bedrooms: unsignedTinyInteger
+    bathrooms: unsignedTinyInteger
+    garages: unsignedTinyInteger
+    start_date: date default:'2022-01-01'
+    end_date: date nullable
+    slider: boolean default:false
+    visible: boolean default:true
+
